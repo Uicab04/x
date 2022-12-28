@@ -21,22 +21,4 @@ response = openai.Completion.create(
 
 response_text = response["choices"][0]["text"]
 
-palabras = response_text.split(" ")
-
-
-# Recorremos cada palabra del texto
-for palabra in palabras:
-    # Si la palabra contiene el símbolo ':', la imprimimos
-    if ":" not in palabra:
-      continue
-    print(palabra)
-
-
-
-
-      
-    
-
-
-
-
+print(response_text)
